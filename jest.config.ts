@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/naming-convention */
 import type { Config } from '@jest/types';
 
 const config: Config.InitialOptions = {
@@ -9,6 +10,7 @@ const config: Config.InitialOptions = {
     '@functions/(.*)': '<rootDir>/src/functions/$1',
     '@interfaces/(.*)': '<rootDir>/src/interfaces/$1',
     '@maps/(.*)': '<rootDir>/src/maps/$1',
+    '@configuration/(.*)': '<rootDir>/src/configuration/$1',
   },
 };
 export default config;

@@ -1,5 +1,4 @@
-import { loadConfiguration } from 'configuration/loadConfiguration';
-
+import { loadConfiguration } from '@configuration/loadConfiguration';
 import { EmojifyResult } from '@interfaces/emojifyResult';
 
 import { getCurrentCommitMessage } from './getCurrentCommitMessage';
