@@ -57,18 +57,22 @@
   },
   "keywords": [
     "emoji",
-    "git emoji",
+    "git",
+    "git hook",
+    "husky",
+    "gitmoji",
     "husky commit hook",
     "emojify",
     "git hooks",
-    "git hook",
-    "husky",
     "husky emoji",
     "husky hook",
     "husky hooks",
     "prepare-commit-msg",
     "commit-msg",
     "typescript",
-    "git commit hook"
+    "git-hook",
+    "git emoji",
+    "git commit hook",
+    "commit message"
   ]
 }
