@@ -6,7 +6,7 @@ import { createDefaultConfiguration } from './createDefaultConfiguration';
 
 export const loadConfiguration = async (): Promise<Configuration> => {
   const explorer = cosmiconfig('git-commit-emojify', {
-    searchPlaces: ['git-commit-emojify.json'],
+    searchPlaces: ['gitEmojify.json'],
   });
 
   const jsonConfiguration = await explorer.search();
