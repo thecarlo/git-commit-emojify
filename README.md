@@ -1,4 +1,4 @@
-# git-commit-emojify
+# git-commit-emojify [![Build status](https://github.com/thecarlo/git-commit-emojify/actions/workflows/build.yml/badge.svg)](https://github.com/thecarlo/git-commit-emojify/actions/workflows/build.yml) [![git-commit-emojify on npm](https://img.shields.io/npm/v/@humankode/git-commit-emojify)](https://www.npmjs.com/package/@humankode/git-commit-emojify)
 
 > A `prepare-commit-msg` git hook script to automatically add emojis to git commit messages
 

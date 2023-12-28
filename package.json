@@ -1,6 +1,6 @@
 {
   "name": "@humankode/git-commit-emojify",
-  "version": "0.0.11",
+  "version": "0.0.12",
   "private": false,
   "description": "A script for the prepare-commit-msg git hook that automatically emojifies git messages",
   "repository": "github:thecarlo/git-commit-emojify",
