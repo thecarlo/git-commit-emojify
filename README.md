@@ -24,7 +24,7 @@ Install and configure [Husky](https://www.npmjs.com/package/husky)
 #!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
 
-npx --yes @humankode/git-commit-emojify
+npx --yes @humankode/git-commit-emojify@latest
 ```
 
 ## Zero config by default
