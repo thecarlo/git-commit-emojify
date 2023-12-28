@@ -3,12 +3,15 @@
 > A `commit-msg` git hook script to automatically add emojis to git commit messages
 
 For example, `git commit -m "hotfix to fix caching"`
+
 //=> `🚑 hotfix to fix caching`
 
 or
 
 in branch `feature-implement-caching`
+
 `git commit -m "implemented caching"` (uses branch name to determine which emoji to use if not enough context in the commit message)
+
 //=> `✨ implemented caching`
 
 ## Usage
@@ -72,7 +75,7 @@ Refer to the [Configuration](src/interfaces/configuration.ts) interface for all 
 
 This will place the emoji at the end of the commit message.
 
-#### 3. Suffix the emoji
+#### 3. Override emoji keywords
 
 `git-commit-emojify.json`
 
