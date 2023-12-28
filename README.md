@@ -38,7 +38,7 @@ If no configuration specified, it will
 
 ## Configuration
 
-Place a file `gitEmojify.json` in your root directory.
+To override the default configuration, place a file called `gitEmojify.json` in your root directory.
 
 Refer to the [Configuration](src/interfaces/configuration.ts) interface for all options.
 
@@ -62,6 +62,15 @@ Refer to the [Configuration](src/interfaces/configuration.ts) interface for all 
 
 ```
 
+For example
+
+branch: `build-updates`
+
+git commit message:
+`git commit -m "ci updates"`
+
+//=> `👷 ci updates`
+
 #### 2. Suffix the emoji
 
 `gitEmojify.json`
@@ -74,6 +83,15 @@ Refer to the [Configuration](src/interfaces/configuration.ts) interface for all 
 ```
 
 This will place the emoji at the end of the commit message.
+
+For example
+
+branch: `build-updates`
+
+git commit message:
+`git commit -m "ci updates"`
+
+//=> `ci updates 👷`
 
 #### 3. Override emoji keywords
 
@@ -93,6 +111,15 @@ This will place the emoji at the end of the commit message.
   ]
 }
 ```
+
+For example
+
+branch: `build-updates`
+
+git commit message:
+`git commit -m "bugfix"`
+
+//=> `🪲 bugfix`
 
 #### 4. Complete configuration example
 
