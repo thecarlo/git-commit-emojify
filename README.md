@@ -1,6 +1,6 @@
 # git-commit-emojify
 
-> A `commit-msg` git hook script to automatically add emojis to git commit messages
+> A `prepare-commit-msg` git hook script to automatically add emojis to git commit messages
 
 For example, `git commit -m "hotfix to fix caching"`
 
@@ -18,7 +18,7 @@ in branch `feature-implement-caching`
 
 Install and configure [Husky](https://www.npmjs.com/package/husky)
 
-`.husky/commit-msg`
+`.husky/prepare-commit-msg`
 
 ```
 #!/usr/bin/env sh

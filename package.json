@@ -2,12 +2,13 @@
   "name": "@humankode/git-commit-emojify",
   "version": "0.0.6",
   "private": false,
-  "description": "A script for the commit-msg git hook that automatically emojifies git messages",
+  "description": "A script for the prepare-commit-msg git hook that automatically emojifies git messages",
   "repository": "github:thecarlo/git-commit-emojify",
   "author": {
     "name": "Carlo van Wyk",
     "url": "https://carlovan.com"
   },
+  "license": "MIT",
   "engines": {
     "node": ">=14"
   },
@@ -54,19 +55,20 @@
     "typescript": "^5.3.3",
     "yarn": "^1.22.21"
   },
-  "license": "MIT",
   "keywords": [
-    "git-commit-emojify",
     "emoji",
+    "git emoji",
+    "husky commit hook",
     "emojify",
     "git hooks",
     "git hook",
     "husky",
+    "husky emoji",
     "husky hook",
-    "commit-msg",
     "husky hooks",
+    "prepare-commit-msg",
+    "commit-msg",
     "typescript",
-    "git commit hook",
-    "husky commit hook"
+    "git commit hook"
   ]
 }
