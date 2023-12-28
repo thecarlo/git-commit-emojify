@@ -1,0 +1,71 @@
+{
+  "name": "@humankode/git-commit-emojify",
+  "version": "0.0.1",
+  "description": "A script for the commit-msg git hook that automatically emojifies git messages",
+  "repository": "github:thecarlo/git-commit-emojify",
+  "author": {
+    "name": "Carlo van Wyk",
+    "url": "https://carlovan.com"
+  },
+  "engines": {
+    "node": ">=14"
+  },
+  "main": "./dist/index.js",
+  "bin": {
+    "git-commit-emojify": "./dist/index.js"
+  },
+  "files": [
+    "dist/index.js"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "test": "jest",
+    "lint": "eslint 'src/**/*.ts'",
+    "lint:fix": "eslint --fix 'src/**/*.ts'",
+    "prettier": "prettier --check 'src/**/*.ts'",
+    "prettier:fix": "prettier --write 'src/**/*.ts'",
+    "prepare": "husky install"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.11",
+    "@typescript-eslint/eslint-plugin": "^6.16.0",
+    "@typescript-eslint/parser": "^6.16.0",
+    "add": "^2.0.6",
+    "cosmiconfig": "^9.0.0",
+    "eslint": "^8.56.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-import-resolver-typescript": "^3.6.1",
+    "eslint-plugin-filename-rules": "^1.3.1",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-jest-formatting": "^3.1.0",
+    "eslint-plugin-no-type-assertion": "^1.3.0",
+    "eslint-plugin-prefer-arrow": "^1.2.3",
+    "eslint-plugin-prettier": "^5.1.2",
+    "eslint-plugin-simple-import-sort": "^10.0.0",
+    "husky": "^8.0.3",
+    "jest": "^29.7.0",
+    "or": "^0.2.0",
+    "prettier": "^3.1.1",
+    "prettier-eslint": "^16.2.0",
+    "ts-jest": "^29.1.1",
+    "ts-node": "^10.9.2",
+    "tsup": "^8.0.1",
+    "typescript": "^5.3.3",
+    "yarn": "^1.22.21"
+  },
+  "license": "MIT",
+  "keywords": [
+    "git-commit-emojify",
+    "emoji",
+    "emojify",
+    "git hooks",
+    "git hook",
+    "husky",
+    "husky hook",
+    "commit-msg",
+    "husky hooks",
+    "typescript",
+    "git commit hook",
+    "husky commit hook"
+  ]
+}
