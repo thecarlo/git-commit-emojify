@@ -6,3 +6,5 @@
 
 package
 *.tgz
+
+src/**/*.js
