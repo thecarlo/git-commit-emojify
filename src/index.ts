@@ -1,8 +1,7 @@
 #!/usr/bin/env node
 
 import { emojify } from '@functions/emojify';
-
-import { updateCurrentCommitMessage } from './functions/updateCurrentCommitMessage';
+import { updateCurrentCommitMessage } from '@functions/updateCurrentCommitMessage';
 
 (async () => {
   const emojifyResult = await emojify();

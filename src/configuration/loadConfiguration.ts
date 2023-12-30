@@ -1,11 +1,11 @@
-import { cosmiconfig } from 'cosmiconfig';
+import { lilconfig } from 'lilconfig';
 
 import { Configuration } from '@interfaces/configuration';
 
 import { createDefaultConfiguration } from './createDefaultConfiguration';
 
 export const loadConfiguration = async (): Promise<Configuration> => {
-  const explorer = cosmiconfig('git-commit-emojify', {
+  const explorer = lilconfig('git-commit-emojify', {
     searchPlaces: ['gitEmojify.json'],
   });
 
