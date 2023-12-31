@@ -7,4 +7,6 @@
 package
 *.tgz
 
+package-lock.json
+
 src/**/*.js

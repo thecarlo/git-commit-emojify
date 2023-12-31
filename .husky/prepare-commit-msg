@@ -1,0 +1,5 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+# using the published package for this repo ;-)
+npx --yes @humankode/git-commit-emojify@latest
