@@ -3,7 +3,7 @@ import { Configuration } from '@interfaces/configuration';
 import { getEmojiByCommitMessage } from './getEmojiByCommitMessage';
 
 describe('getEmojiByCommitMessage', () => {
-  test('returns an empty string when commit message is empty', () => {
+  it('returns an empty string when commit message is empty', () => {
     const config = {
       emojiKeywords: [{ keywords: ['bug'], emoji: '🐛' }],
     } as unknown as Configuration;
@@ -13,7 +13,7 @@ describe('getEmojiByCommitMessage', () => {
     expect(result).toBe('');
   });
 
-  test('returns an empty string when no keywords match', () => {
+  it('returns an empty string when no keywords match', () => {
     const config = {
       emojiKeywords: [{ keywords: ['bug'], emoji: '🐛' }],
     } as unknown as Configuration;
@@ -23,7 +23,7 @@ describe('getEmojiByCommitMessage', () => {
     expect(result).toBe('');
   });
 
-  test('returns the correct emoji for a single keyword match', () => {
+  it('returns the correct emoji for a single keyword match', () => {
     const config = {
       emojiKeywords: [{ keywords: ['bug'], emoji: '🐛' }],
     } as unknown as Configuration;
@@ -33,7 +33,17 @@ describe('getEmojiByCommitMessage', () => {
     expect(result).toBe('🐛');
   });
 
-  test('returns the correct emoji for the first matching keyword', () => {
+  it('returns the correct emoji for a a keyword phrase match', () => {
+    const config = {
+      emojiKeywords: [{ keywords: ['initial commit'], emoji: '✨' }],
+    } as unknown as Configuration;
+
+    const result = getEmojiByCommitMessage(config, 'initial commit');
+
+    expect(result).toBe('✨');
+  });
+
+  it('returns the correct emoji for the first matching keyword', () => {
     const config = {
       emojiKeywords: [
         { keywords: ['bug', 'regression'], emoji: '🪲' },
@@ -49,7 +59,7 @@ describe('getEmojiByCommitMessage', () => {
     expect(result).toBe('🪲');
   });
 
-  test('returns the emoji for the first matching set of keywords', () => {
+  it('returns the emoji for the first matching set of keywords', () => {
     const config = {
       emojiKeywords: [
         { keywords: ['enhance', 'improve'], emoji: '✨' },
