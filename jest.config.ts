@@ -12,5 +12,14 @@ const config: Config.InitialOptions = {
     '@maps/(.*)': '<rootDir>/src/maps/$1',
     '@configuration/(.*)': '<rootDir>/src/configuration/$1',
   },
+  coverageThreshold: {
+    global: {
+      statements: 80,
+      branches: 80,
+      functions: 80,
+      lines: 80,
+    },
+  },
+  coverageReporters: ['text', 'lcov', 'clover', 'html'],
 };
 export default config;
